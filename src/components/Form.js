@@ -14,8 +14,8 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.initialState = {
-      department: 'DEPARTMENT OF THE AIR FORCE',
-      departmentNameUpper: "DEPARTMENT OF THE AIR FORCE",
+      department: 'DEPARTMENT OF THE ARMY',
+      departmentNameUpper: "DEPARTMENT OF THE ARMY",
       unit: 'Type your Unit Here',
       base: 'Optional Second Unit Header Line',
       attn: 'Insert Receiver of Memorandum Here',
@@ -26,7 +26,7 @@ class Form extends Component {
       dutytitle: "Enter Signer's Position Here",
       rank: "Select Signer's Rank",
       writersname: "Insert Signer's Name FIRST MI. LAST",
-      branch: "USAF",
+      branch: "USAR",
       paragraphArray: [
         {
           paraInfo: ""
@@ -35,7 +35,7 @@ class Form extends Component {
       showModal: false
     };
     this.state = {
-      branch: "USAF",
+      branch: "USAR",
       paragraphArray: [
         {
           paraInfo: ""
@@ -322,14 +322,11 @@ class Form extends Component {
                 type="text"
                 name="branch"
                 id="branch"
-                defaultValue="USAF"
+                defaultValue="USAR"
                 required
                 onChange={this.handleChange}>
                     <option value="" disabled >Choose Your Branch</option>
-                    <option value="USAF">United States Air Force</option>
                     <option value="USA">United States Army</option>
-                    <option value="USN">United States Navy</option>
-                    <option value="USMC">United States Marine Corps</option>
             </select>
         </div>
 
@@ -354,25 +351,33 @@ class Form extends Component {
                 required
                >
                     <option value="" disabled>Choose Your Rank</option>
-                    <option value="AB">Airman Basic</option>
-                    <option value="Amn">Airman</option>
-                    <option value="A1C">Airman First Class</option>
-                    <option value="SrA">Senior Airman</option>
-                    <option value="SSgt">Staff Sergeant</option>
-                    <option value="TSgt">Technical Sergeant</option>
-                    <option value="MSgt">Master Sergeant</option>
-                    <option value="SMSgt">Senior Master Sergeant</option>
-                    <option value="CMSgt">Chief Master Sergeant</option>
-                    <option value="2d Lt">Second Lieutenant</option>
-                    <option value="1st Lt">First Lieutenant</option>
-                    <option value="Capt">Captain</option>
-                    <option value="Maj">Major</option>
-                    <option value="Lt. Col.">Lieutenant Colonel</option>
-                    <option value="Colonel">Colonel</option>
-                    <option value="Brigadier Genearl">Brigadier General</option>
-                    <option value="Major General">Major General</option>
-                    <option value="Lieutenant General">Lieutenant General</option>
-                    <option value="General">General</option>
+                    <option value="PVT">Private</option>
+                    <option value="PV2">Private</option>
+                    <option value="PFC">Private First Class</option>
+                    <option value="SPC">Specialist</option>
+                    <option value="CPL">Corporal</option>
+                    <option value="SGT">Sergeant</option>
+                    <option value="SSG">Staff Sergeant</option>
+                    <option value="SFC">Sergeant First Class</option>
+                    <option value="MSG">Master Sergeant</option>
+                    <option value="1SG">First Sergeant</option>
+                    <option value="SGM">Sergeant Major</option>
+                    <option value="CSM">Command Sergeant Major</option>
+                    <option value="W01">Warrent Officer</option>
+                    <option value="CW2">Chief Warrent Officer 2</option>
+                    <option value="CW3">Chief Warrent Officer 3</option>
+                    <option value="CW4">Chief Warrent Officer 4</option>
+                    <option value="CW5">Chief Warrent Officer 5</option>
+                    <option value="2LT">Second Lieutenant</option>
+                    <option value="1LT">First Lieutenant</option>
+                    <option value="CPT">Captain</option>
+                    <option value="MAJ">Major</option>
+                    <option value="LTC">Lieutenant Colonel</option>
+                    <option value="COL">Colonel</option>
+                    <option value="BG">Brigadier General</option>
+                    <option value="MG">Major General</option>
+                    <option value="LTG">Lieutenant General</option>
+                    <option value="GEN">General</option>
             </select>
         </div>
 
